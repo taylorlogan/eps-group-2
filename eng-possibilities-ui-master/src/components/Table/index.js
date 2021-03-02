@@ -6,6 +6,8 @@ import { TextField } from '@material-ui/core';
 
 
 const Table2 = () => {
+    const backendURL = 'https://gs-eps.herokuapp.com';
+    const [data, setData] = useState(null);
     
   const [energy, setEnergy] = useState(0);
   const [energyInDollars, setEnergyInDollars] = useState(0);
@@ -30,7 +32,13 @@ const handleSubmit = (event) => {
     // validate % input
     // total % is less than 100%, 
     // each percent is > min
-
+    fetch(backendURL, {
+        mode: 'no-cors'
+    }) 
+        .then(response => response.json())
+        .then(data => setData(data))
+        .catch(error => console.error(error));
+    console.log(data);
 }
 
 const energyInputOnChange = (event) => {
