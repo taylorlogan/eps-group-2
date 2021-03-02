@@ -12,5 +12,4 @@ import java.util.Map;
 @Setter
 public class ForecastRequest {
     private Map<String, Double> request;
-
 }
