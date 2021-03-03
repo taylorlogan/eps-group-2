@@ -153,14 +153,96 @@ const realEstateInputOnChange = (event) => {
                     </td>
                 </tr>
 
+                <tr>
+                    <td> Pharmaceuticals </td>
+                    <td> 10 </td>
+                    <td> number </td>
+                    <td> 
+                        <TextField
+                            id="realEstate-input"
+                            label="Number"
+                            type="number"
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                            defaultValue="0"
+                            variant="outlined"
+                            
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Airline </td>
+                    <td> 10 </td>
+                    <td> number </td>
+                    <td> 
+                        <TextField
+                            id="realEstate-input"
+                            label="Number"
+                            type="number"
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                            defaultValue="0"
+                            variant="outlined"
+                            
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Retail </td>
+                    <td> 10 </td>
+                    <td> number </td>
+                    <td> 
+                        <TextField
+                            id="realEstate-input"
+                            label="Number"
+                            type="number"
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                            defaultValue="0"
+                            variant="outlined"
+                            
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Gaming </td>
+                    <td> 12 </td>
+                    <td> number </td>
+                    <td> 
+                        <TextField
+                            id="realEstate-input"
+                            label="Number"
+                            type="number"
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                            defaultValue="0"
+                            variant="outlined"
+                            
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td></td>
+                    <td>  </td>
+                    <td> 
+                        <button onClick={handleSubmit}>
+                            Update!
+                        </button>
+                    </td>
+                </tr>
+
             </tbody>
 
         </Table>
-        
-      <p>You clicked {energy} times</p>
-      <button onClick={handleSubmit}>
-        Update!
-      </button>
+              
     </div>
   );
 
